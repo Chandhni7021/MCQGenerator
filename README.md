@@ -38,6 +38,8 @@ Whether you're a teacher preparing quizzes, a student practicing concepts, or a 
 - 🔁 Can be extended into a full-fledged educational quiz platform
 
   ![Screenshot 2025-06-16 192852](https://github.com/user-attachments/assets/a86c6c38-2e8a-4387-b7f7-83c9e8a05668)
+  ![Screenshot 2025-06-16 192837](https://github.com/user-attachments/assets/d47223fd-9d67-4cab-9b04-8f4d503093bb)
+
 
 
 🛠️ Installation
