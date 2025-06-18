@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generated MCQs - MCQify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #c3ec52 0%, #0ba29d 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.6s ease;
+        }
+
+        h2 {
+            font-weight: 600;
+            color: #222;
+        }
+
+        .btn {
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn-success:hover {
+            background-color: #28a745d9;
+        }
+
+        .btn-danger:hover {
+            background-color: #dc3545cc;
+        }
+
+        .btn-secondary:hover {
+            background-color: #6c757dcc;
+        }
+
+        .mcq-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            white-space: pre-wrap;
+            box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.05);
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mb-4">📚 Generated MCQs</h2>
+
+        <div class="mb-4 text-center">
+            <a class="btn btn-success me-2" href="{{ url_for('download_file', filename=txt_filename) }}">⬇️ Download as .txt</a>
+            <a class="btn btn-danger" href="{{ url_for('download_file', filename=pdf_filename) }}">📄 Download as .pdf</a>
+        </div>
+
+        <div class="mcq-box">
+            {{ mcqs }}
+        </div>
+
+        <div class="mt-4 text-center">
+            <a href="/" class="btn btn-secondary">🔄 Generate Again</a>
+        </div>
+    </div>
+
+    <!-- Optional Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
