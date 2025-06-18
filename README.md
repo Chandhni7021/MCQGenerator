@@ -37,6 +37,9 @@ Whether you're a teacher preparing quizzes, a student practicing concepts, or a 
 - ⚡ Powered by state-of-the-art LLMs, ensuring relevance and clarity  
 - 🔁 Can be extended into a full-fledged educational quiz platform
 
+  ![Screenshot 2025-06-16 192852](https://github.com/user-attachments/assets/a86c6c38-2e8a-4387-b7f7-83c9e8a05668)
+
+
 🛠️ Installation
 
 1️⃣ Clone the repository:
@@ -84,3 +87,4 @@ fpdf2
 This project is licensed under the MIT License. Feel free to use, modify, and share with credit.
 
 🔥 Unlock the power of AI to generate questions in seconds, not hours.
+
